@@ -145,8 +145,9 @@ public class Calculator extends JFrame implements ActionListener {
         operator = op;
         if (op == '√') {
             calculate();
+        } else {
+            textField.setText("");
         }
-        textField.setText("");
     }
 
     private void backspace() {
