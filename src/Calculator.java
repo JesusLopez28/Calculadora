@@ -31,7 +31,7 @@ public class Calculator extends JFrame implements ActionListener {
             numberButtons[i].addActionListener(this);
         }
 
-        functionButtons = new JButton[11]; // Added new buttons for modulo, power, sqrt, back
+        functionButtons = new JButton[11];
         addButton = new JButton("+");
         subButton = new JButton("-");
         mulButton = new JButton("*");
@@ -144,7 +144,7 @@ public class Calculator extends JFrame implements ActionListener {
         num1 = Double.parseDouble(textField.getText());
         operator = op;
         if (op == '√') {
-            calculate(); // Immediately calculate square root
+            calculate();
         }
         textField.setText("");
     }
